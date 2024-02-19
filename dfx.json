@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "nft_http_contract_backend": {
+      "candid": "src/nft_http_contract_backend/nft_http_contract_backend.did",
+      "package": "nft_http_contract_backend",
+      "type": "rust"
+    },
+    "nft_http_contract_frontend": {
+      "dependencies": [
+        "nft_http_contract_backend"
+      ],
+      "source": [
+        "src/nft_http_contract_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
